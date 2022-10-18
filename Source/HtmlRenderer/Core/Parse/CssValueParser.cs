@@ -212,7 +212,8 @@ namespace TheArtOfDev.HtmlRenderer.Core.Parse
                     factor = emFactor / 2;
                     break;
                 case CssConstants.Px:
-                    factor = fontAdjust ? 72f / 96f : 1f; //TODO:a check support for hi dpi
+                    factor = true ? 72f / 96f : 1f; //TODO:a check support for hi dpi
+                    //factor = fontAdjust ? 72f / 96f : 1f; //TODO:a check support for hi dpi
                     break;
                 case CssConstants.Mm:
                     factor = 3.779527559f; //3 pixels per millimeter
